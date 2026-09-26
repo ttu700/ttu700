@@ -1,10 +1,12 @@
 # Hi, I'm Terry Tu
 
-Analytics grad (Georgia Tech, MS Analytics '26) working where product analytics meets AI: funnel analysis, LLM evaluation, and AI-assisted analytics tools. Based in Los Angeles.
+I work on both sides of AI: using data to drive product decisions, and evaluating whether AI systems actually give the right answers.
 
-**Background:** Product analytics and content strategy internships at DIRECTV · AI data operations at Micro1 · LLM code evaluation at Outlier (Scale AI)
+Currently Human Data Manager at Micro1 (AI operations) · Georgia Tech MS Analytics '26 · previously DIRECTV (product analytics, content strategy) and Outlier / Scale AI (LLM code evaluation) · Los Angeles
 
-**Tools:** Python · SQL · BigQuery · R · Power BI · Tableau · Streamlit
+**Open to:** product analyst, APM, and AI operations roles
+
+**Tools:** Python · SQL · PostgreSQL · R · Power BI · Tableau · Streamlit
 
 📫 terry.tu700@gmail.com · [LinkedIn](https://www.linkedin.com/in/tuterry/)
 
@@ -13,13 +15,25 @@ Analytics grad (Georgia Tech, MS Analytics '26) working where product analytics 
 ## Featured
 
 ### Project ARIA: AI diagnostic assistant for building HVAC data
-Georgia Tech MS practicum sponsored by Joulea. Building operators ask plain-English questions about sensor data and fault events, and ARIA answers with evidence, citations, and charts.
+Georgia Tech MS practicum sponsored by Joulea, built with two teammates. Building engineers spend 30–60 minutes digging through sensor data to diagnose each equipment fault. ARIA lets them ask a plain-English question and get back a structured diagnosis (the evidence, the likely cause, and a recommended check) in seconds.
 
-- **My role:** Led response generation and the Streamlit frontend: structured answers, hallucination guardrails, and a mock/live data toggle that let frontend and backend work run in parallel.
-- **Result:** 90% accuracy (28 of 31) on a SQL-verified evaluation set. Answers in about 11 seconds versus 30–60 minutes of manual investigation.
-<!-- ARIA LINK: when the ARIA repo is ready, delete this line and the "END ARIA LINK" line, then paste the repo URL in place of LINK.
+<img src="aria-architecture.svg" width="800" alt="ARIA architecture: engineer question, query rewriter, router, PostgreSQL or Qdrant, answer generator, Streamlit UI">
+
+- **My role:** Generation and frontend lead. Designed the Situation–Evidence–Inference–Action answer structure and hallucination guardrails, and built the Streamlit UI, chart rendering, and a mock data layer that let frontend and backend development run in parallel.
+- **Results:** 90% accuracy (28 of 31) on SQL-verified questions, 3.42/4.0 on 12 human-scored diagnostic scenarios, and under 5% hallucination, meeting all project targets. Median response time of 10.9 seconds versus 30–60 minutes of manual investigation.
+- **How it stays trustworthy:** SQL supplies the exact numbers, semantic search supplies context, and the language model only reasons over evidence it's handed. It never queries the database itself. Every answer separates evidence from interpretation, and ARIA declines to answer when the data can't support a conclusion.
+<!-- ARIA LINK: when a shareable ARIA repo exists, delete this line and the "END ARIA LINK" line, then paste the repo URL in place of LINK.
 - [Case study →](LINK)
 END ARIA LINK -->
+
+### Submission Review Toolkit (micro1)
+A self-initiated JavaScript tool I built to automate quality review for a video and photo data-collection project. It runs in the browser, pulls each task's data, and checks submissions against the project's acceptance spec, so reviewers can focus on judgment calls instead of manual checks.
+
+- **Engineering:** Rewrote it after a code review, fixing six bugs including regex injection, double-rounding, and cross-task data contamination.
+<!-- IMPACT: once you have the number, delete this line and the "END IMPACT" line, then fill in the brackets.
+- **Impact:** [time saved per review or volume handled]
+END IMPACT -->
+- *Code is private (internal tool).*
 
 <!-- SQL AGENT: to show this section, delete this line and the "END SQL AGENT" line at the bottom of it.
 
@@ -32,15 +46,11 @@ An AI agent that answers business questions about the Google Merchandise Store's
 
 END SQL AGENT -->
 
-<!-- BRFSS: to show this section, delete this line and the "END BRFSS" line at the bottom of it.
-
-### Health-Risk Forecasting (BRFSS)
-[ONE LINE: what you forecast, from which CDC survey data, and with what method]
-
-- **Result:** [ONE LINE: your key finding or model performance]
+### Public Health Risk Forecasting (BRFSS)
+Built and compared LASSO, Random Forest, and XGBoost models on 450K records from the CDC's BRFSS survey to predict health risk. The best model reached 77% recall, with the top risk drivers surfaced in a SHAP dashboard.
+<!-- BRFSS LINK: if you publish the repo, delete this line and the "END BRFSS LINK" line, then paste the URL in place of LINK.
 - [Repo →](LINK)
-
-END BRFSS -->
+END BRFSS LINK -->
 
 ---
 
