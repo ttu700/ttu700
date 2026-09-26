@@ -57,29 +57,3 @@ Georgia Tech team project (team of four) on the CDC's 2024 BRFSS survey: 450K+ r
 - [Dashboard →](LINK)
 END BRFSS LINK -->
 
----
-
-## Earlier work
-
-**[Stock Research Dashboard](https://github.com/ttu700/Stock-Research-Dashboard)** · Power BI, Alpha Vantage API
-Look up any ticker for 1–6 months of price history, news filtered by bullish or bearish sentiment, and an IPO and earnings calendar.
-
-<img src="https://github.com/ttu700/Stock-Research-Dashboard/raw/main/Stock%20Research%20Dashboard/stockshowcase.gif" width="600" alt="Stock dashboard preview">
-
-**[Spotify Listening History](https://github.com/ttu700/Spotify-Music-Analysis)** · Python, Spotify API, Power BI
-Three years of my own listening (Jan 2021 to Jan 2024): 4,400+ hours across 7,600 artists. Linkin Park was my most-played artist, and I listened most on Mondays and least on Saturdays.
-
-<img src="https://github.com/ttu700/Spotify-Music-Analysis/raw/main/spotifyprojectshowcase.gif?raw=true" width="600" alt="Spotify dashboard preview">
-
-**[Amazon India Sales](https://github.com/ttu700/Amazon-India-Sales-Analysis)** · Power BI
-Analysis of 128,975 orders ($912K in sales, April to June 2022). Sets drove about half of all revenue, Maharashtra and Karnataka were the top states, and about 72% of orders went through Amazon fulfillment rather than merchants.
-
-<img src="https://github.com/ttu700/Amazon-India-Sales-Analysis/raw/main/showcase.gif" width="600" alt="Amazon sales dashboard preview">
-
-**[Data Professional Survey](https://github.com/ttu700/Data-Professional-Breakdown-Dashboard)** · Power BI
-Cleaned 630 usable responses from a survey of data professionals. Respondents rated salary satisfaction just 4.3 out of 10, below work-life balance at 5.7. Python was the clear favorite language, and data scientists reported the highest average salaries.
-
-<img src="https://raw.githubusercontent.com/ttu700/Data-Professional-Breakdown-Dashboard/main/dashboard_gif.gif" width="600" alt="Data professional survey dashboard preview">
-
-**[Earnings Announcements and Stock Prices](https://github.com/ttu700/Earnings-Impact-Across-Industries-Analysis)** · Python, hypothesis testing · team of five
-Tested whether Q4 earnings surprises moved stock prices across five industries over ten years, three companies each. Only pharmaceuticals showed a significant effect (p = 0.018), a negative correlation between surprise and price change. The other four industries showed no pattern.
