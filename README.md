@@ -46,10 +46,15 @@ An AI agent that answers business questions about the Google Merchandise Store's
 
 END SQL AGENT -->
 
-### Public Health Risk Forecasting (BRFSS)
-Built and compared LASSO, Random Forest, and XGBoost models on 450K records from the CDC's BRFSS survey to predict health risk. The best model reached 77% recall, with the top risk drivers surfaced in a SHAP dashboard.
-<!-- BRFSS LINK: if you publish the repo, delete this line and the "END BRFSS LINK" line, then paste the URL in place of LINK.
-- [Repo →](LINK)
+### Health Risk Prediction (CDC BRFSS)
+Georgia Tech team project (team of four) on the CDC's 2024 BRFSS survey: 450K+ responses and 301 features. We predicted which respondents report fair or poor health from social and lifestyle factors, then mapped average predicted risk by state in Tableau, with each state's top three risk drivers shown on hover.
+
+- **Modeling:** LASSO narrowed 300+ variables to 16 predictors. Since about 80% of respondents were healthy, we optimized for recall over accuracy: logistic regression caught 43% of high-risk respondents, random forest 51%, and XGBoost 77% (AUC 0.87), trading overall accuracy from 85% down to 77%.
+- **Finding:** Income, education, and physical inactivity ranked alongside diabetes among the top risk drivers. Kentucky, Arkansas, and West Virginia had the highest predicted risk among continental states.
+
+<img src="brfss-risk-map.png" width="700" alt="Map of average predicted health risk by US state">
+<!-- BRFSS LINK: if you publish the repo or a Tableau Public link, delete this line and the "END BRFSS LINK" line, then paste the URL in place of LINK.
+- [Dashboard →](LINK)
 END BRFSS LINK -->
 
 ---
