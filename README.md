@@ -1,10 +1,6 @@
-# Hi, I'm Terry Tu
-
-I work on both sides of AI: using data to drive product decisions, and evaluating whether AI systems actually give the right answers.
+# Hey, I'm Terry Tu
 
 Currently Human Data Manager at Micro1 (AI operations) · Georgia Tech MS Analytics '26 · previously DIRECTV (product analytics, content strategy) and Outlier / Scale AI (LLM code evaluation) · Los Angeles
-
-**Open to:** product analyst, APM, and AI operations roles
 
 **Tools:** Python · SQL · PostgreSQL · R · Power BI · Tableau · Streamlit
 
